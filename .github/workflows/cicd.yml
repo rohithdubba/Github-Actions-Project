@@ -119,5 +119,5 @@ jobs:
       uses: docker/build-push-action@v6.17.0
       with:
         push: true
-        tags: rohithdubba/bankapp:latest
+        tags: rohithr76/bankapp:latest
         context: . 
