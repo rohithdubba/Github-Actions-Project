@@ -5,7 +5,7 @@ EXPOSE 8080
 RUN ls 
 
 ENV APP_HOME=/usr/src/app
-RUN mkdir -p app
+
 COPY target/*.jar $APP_HOME/app.jar
 
 WORKDIR $APP_HOME
