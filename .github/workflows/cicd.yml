@@ -113,6 +113,8 @@ jobs:
       uses: docker/setup-qemu-action@v3
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
+    - name: Verify JAR file exists
+      run: ls -R target/      
     - name: Build and push
       uses: docker/build-push-action@v6.17.0
       with:
