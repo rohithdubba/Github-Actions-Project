@@ -6,7 +6,7 @@ RUN ls
 
 ENV APP_HOME=/usr/src/app
 RUN mkdir -p ./artifact_output
-COPY ./artifact_output/*.jar $APP_HOME/app.jar
+COPY artifact_output/*.jar $APP_HOME/app.jar
 
 WORKDIR $APP_HOME
 
